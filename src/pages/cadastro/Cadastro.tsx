@@ -1,6 +1,14 @@
 import './Cadastro.css'
+import { useNavigate } from 'react-router-dom'
 
 function Cadastro() {
+
+  const navigate = useNavigate()
+
+  function back() {
+    navigate('/login')
+  }
+
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center bg-steel-blue font-bold">
@@ -59,7 +67,7 @@ function Cadastro() {
             />
           </div>
           <div className="flex justify-around w-full gap-8">
-            <button className='rounded font-montserrat font-semibold text-white bg-castanha-profunda hover:bg-red-700 w-1/2 py-2' >
+            <button className='rounded font-montserrat font-semibold text-white bg-castanha-profunda hover:bg-red-700 w-1/2 py-2' onClick={back}>
               Cancelar
             </button>
             <button 

@@ -12,7 +12,7 @@ function HomeLogado() {
                   <img src="..\src\assets\img\Pharmacist.gif" alt="Imagem da Home" />
                   <div>
                       <p className='text-center text-slate-600 font-semibold font-montserrat'>Seja Bem-vinde! Aqui você tem total autonomia sobre o seu negócio!</p>
-                      <p className='text-center text-slate-600 font-semibold  font-montserrat'>Que tal dacadastrar um novo produto para seus clientes?</p>
+                      <p className='text-center text-slate-600 font-semibold  font-montserrat'>Que tal cadastrar um novo produto para seus clientes?</p>
                       <button className='bg-light-blue hover:bg-medium-blue text-white font-semibold rounded mx-60 my-10 w-40 h-10'>Novo Produto</button>
                   </div>
               </div>

@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import './Login.css';
 
 function Login() {
     return (
         <>
             <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center bg-steel-blue font-bold ">
-            <div className="fundoLogin hidden lg:block"></div>
+                <div className="fundoLogin hidden lg:block"></div>
 
                 <form className="flex justify-center items-center flex-col w-1/2 gap-4" >
                     <h2 className="text-slate-700 text-5xl ">Entrar</h2>
@@ -32,16 +33,19 @@ function Login() {
                     </div>
                     <button
                         type='submit'
-                        className="rounded bg-light-blue flex justify-center
-                                   hover:bg-medium-blue text-white w-1/2 py-2">
-                        <span className='text-white font-bold font-montserrat'>Entrar</span>
+                        className="rounded bg-light-blue flex justify-center hover:bg-medium-blue text-white w-1/2 py-2">
+
+                        <Link to="/home">
+                            <span className='text-white font-bold font-montserrat'>Entrar</span>
+                        </Link>
+
                     </button>
 
                     <hr className="border-slate-800 w-full" />
 
                     <p className='text-slate-500 font-montserrat font-bold'>
                         Ainda não tem uma conta?{' '}
-                        Cadastre-se
+                        <Link to="/cadastro" className='hover:underline'>Cadastre-se</Link>
                     </p>
                 </form>
             </div>

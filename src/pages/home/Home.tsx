@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Home() {
     return (
         <>
@@ -13,9 +15,20 @@ function Home() {
                         <div>
                             <p className='text-center text-slate-600 font-semibold font-montserrat'>Farmácia Saúde é o lugar para construir sua farmácia online!</p>
                             <p className='text-center text-slate-600 font-semibold  font-montserrat'>Cadastre-se e registre seus produtos e lucre sem sair de casa!</p>
-                            <button className='bg-light-blue hover:bg-medium-blue text-white font-semibold rounded mx-60 my-10 w-40 h-10'>Cadastre-se</button>
+                            <Link to="/cadastro">
+                                <button className='bg-light-blue hover:bg-medium-blue text-white font-semibold rounded mx-60 my-2 w-40 h-10'>
+                                    Cadastrar
+                                </button>
+                            </Link>
+                            
+                            <div className='py-4'></div>
+
                             <p className='text-center text-slate-600 font-semibold  font-montserrat'>Já é cadastrado? Faça login!</p>
-                            <button className='bg-light-blue hover:bg-medium-blue text-white font-semibold rounded mx-60 my-10 w-40 h-10'>Login</button>
+                            <Link to="/login">
+                                <button className='bg-light-blue hover:bg-medium-blue text-white font-semibold rounded mx-60 my-2 w-40 h-10'>
+                                    Login
+                                </button>
+                            </Link>
                         </div>
                     </div>
 
